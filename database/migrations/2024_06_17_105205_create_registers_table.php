@@ -13,6 +13,12 @@ return new class extends Migration
     {
         Schema::create('registers', function (Blueprint $table) {
             $table->id();
+            $table->string("name");
+            $table->string("password");
+            $table->string("email");
+            $table->string("phone");
+            $table->string("remember_token"); 
+        
             $table->timestamps();
         });
     }

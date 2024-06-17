@@ -13,5 +13,7 @@ class RegisterSeeder extends Seeder
     public function run(): void
     {
         //
+        \App\Models\registers::factory(10)->create();
+
     }
 }
